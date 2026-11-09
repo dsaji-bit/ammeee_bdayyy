@@ -109,10 +109,10 @@ main {
 
 /* Main content stays readable above decorative layer */
 
-.section,
-.memory-trail {
+.section {
   position: relative;
-}
+  z-index: 2;
+} 
 
 .section {
   z-index: 2;
