@@ -1,154 +1,291 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f1e8">
-  <title>The Heart of Our Family | Happy Birthday Ammeee</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf1">
+  <title>Ammeeee | The Heart of Our Family</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="ambient" aria-hidden="true">
-    <span>♡</span><span>✧</span><span>❀</span>
-    <span>♡</span><span>✦</span><span>୨୧</span>
-  </div>
-
-  <audio id="bgMusic" preload="metadata" loop>
-    <source src="AZuAoXSp2YNOmZZEf7WQ%2B5alVZs9UfhY.m4a" type="audio/mp4">
-  </audio>
-
-  <button class="music-toggle" id="musicToggle" aria-label="Toggle music">♫ <span>Music</span></button>
 
   <main>
-    <div class="memory-trail" id="memoryTrail" aria-label="Scattered family Polaroids"></div>
-    <div class="doodle-trail" id="doodleTrail" aria-hidden="true"></div>
 
-    <section class="opening section" id="opening">
-      <div class="tiny-label">A little celebration of a very big love</div>
+    <!-- OPENING -->
+    <section id="opening" class="section">
 
-      <div class="verse-card">
-        <div class="ornament">✧ &nbsp; ✧ &nbsp; ✧</div>
-        <p class="verse" lang="ml">എന്‍റെ ദൈവം തന്‍റെ മഹത്വത്തിന്‍റെ സമ്പന്നതയില്‍നിന്ന് യേശുക്രിസ്തുവഴി നിങ്ങള്‍ക്ക് ആവശ്യമുള്ളതെല്ലാം നല്‍കും.</p>
-        <p class="verse-ref" lang="ml">ഫിലിപ്പി 4 : 19 ❤️‍🔥</p>
-        <div class="ornament">❀</div>
+      <p class="verse">
+        എന്‍റെ ദൈവം തന്‍റെ മഹത്വത്തിന്‍റെ സമ്പന്നതയില്‍നിന്ന്
+        യേശുക്രിസ്തുവഴി നിങ്ങള്‍ക്ക് ആവശ്യമുള്ളതെല്ലാം നല്‍കും.
+      </p>
+
+      <p class="verse-reference">ഫിലിപ്പി 4 : 19 ❤️‍🔥</p>
+
+      <h1>For My Ammeeee</h1>
+
+      <p>
+        A little surprise for the heart of our family.
+        A celebration of the love, faith and beautiful memories
+        that make you who you are.
+      </p>
+
+      <button id="enterBtn">Open Your Surprise ♡</button>
+
+      <div class="opening-decoration">
+        ✧ ♡ ❀ 🦋 ❀ ♡ ✧
       </div>
 
-      <div class="reflection-wrap">
-        <p class="eyebrow">A vachanam that feels like you</p>
-        <div class="reflection" id="reflection"></div>
-      </div>
-
-      <button class="primary-btn" id="enterBtn">Open your surprise <span>♡</span></button>
-      <p class="tap-note">A little music, a lot of love, and everything we wanted to tell you.</p>
     </section>
 
-    <section class="birthday section hidden" id="birthday">
-      <div class="doodle doodle-one">♡</div>
-      <div class="doodle doodle-two">✿</div>
-      <p class="eyebrow">Today, the world celebrates you</p>
-      <h1>HAPPY BIRTHDAY,<br><em>AMMEEEE!</em></h1>
-      <p class="subheading">The Heart of Our Family</p>
-      <p class="intro">For all the love you give, all the lives you hold together, and all the little ways you make this family feel like home.</p>
 
-      <div class="tribute-card">
-        <span class="small-flower">✿</span>
-        <h2>To our Ammeee...</h2>
-        <p>To the mother, the wife, the daughter, the Lincy Chechi — and every beautiful role you carry with so much love.</p>
-        <p class="tribute-note">There is so much of you in all of us. This little corner of the internet is only a tiny way of saying thank you.</p>
-      </div>
-    </section>
+    <!-- BIRTHDAY -->
+    <section id="birthday" class="section hidden">
 
-    <section class="letter-section section hidden" id="myLetter">
-      <p class="eyebrow">A letter from your daughter</p>
-      <h2 class="section-title">A little something, from me to you</h2>
+      <h1>HAPPY BIRTHDAY,</h1>
+      <h2>AMMEEEE! 🎂❤️</h2>
 
-      <div class="scroll-invite">
-        <div class="scroll-roll">
-          <span>✧ A letter for Ammeee ✧</span>
-          <button id="unrollBtn">Untie the golden ribbon</button>
-          <div class="ribbon">♡</div>
-        </div>
+      <p style="text-align:center">
+        To our mother, wife, daughter, Lincy Chechi
+        and everything to everyone around you.
+      </p>
 
-        <article class="parchment" id="myParchment">
-          <div class="paper-top">For my Ammeee, with all my love</div>
-          <div id="diaLetter" class="letter-copy"></div>
-          <div class="paper-sign">Ummaaa ❤️</div>
-        </article>
-      </div>
-    </section>
-
-    <section class="video-section section hidden" id="familyVideo">
-      <p class="eyebrow">A few more memories</p>
-      <h2 class="section-title">Because every moment with you is a keepsake</h2>
-      <div class="video-frame">
-        <video id="birthdayVideo" controls playsinline preload="metadata">
-          <source src="HnVideoEditor_2026_11_09_152933892.mp4" type="video/mp4">
-          Your browser does not support this video.
-        </video>
-      </div>
-      <p class="tap-note">If the video does not load, add the MP4 file beside index.html using the exact filename above.</p>
-    </section>
-
-    <section class="other-letters section hidden" id="otherLetters">
-      <p class="eyebrow">Words from people who love you</p>
-      <h2 class="section-title">A little love from Gamu &amp; Annlitta</h2>
-
-      <div class="message-card">
-        <img src="IMG-20261108-WA0130.jpg" alt="Gamu's portrait" loading="lazy">
-        <div>
-          <p class="eyebrow">A letter from</p>
-          <h3>Gamu</h3>
-          <div id="gamuLetter" class="letter-copy"></div>
-        </div>
+      <div class="birthday-message">
+        <p>
+          Some people make a home beautiful.
+          You make every heart feel at home.
+        </p>
+        <p>
+          Today, we celebrate YOU! 🥹❤️
+        </p>
       </div>
 
-      <div class="message-card reverse">
-        <img src="IMG-20260513-WA0016.jpg" alt="Annlitta's portrait" loading="lazy">
-        <div>
-          <p class="eyebrow">A letter from</p>
-          <h3>Annlitta</h3>
-          <div id="annLetter" class="letter-copy"></div>
-        </div>
+    </section>
+
+
+    <!-- REFLECTION -->
+    <section id="reflectionSection" class="section hidden">
+
+      <h2>A Vachanam That Reminds Me of You</h2>
+
+      <div class="reflection-card">
+        <p id="reflection"></p>
       </div>
+
     </section>
 
-    <section class="closing section hidden" id="closing">
-      <div class="closing-heart">♡</div>
-      <p class="eyebrow">And one thing we want you to know</p>
-      <h2>Ammee, I'll always choose you as my mother in every lifetimes I get!</h2>
-      <p class="closing-line">Nanni eeshoyee... For my mother ❤️</p>
-      <div class="signature">From your Diyamol, Appa, Kuttamma &amp; Kozhamachy</div>
-      <p class="family-line">Gamu, Annlitta and the entire adhoc family.</p>
+
+    <!-- DIYAMOL'S LETTER -->
+    <section id="myLetter" class="section hidden">
+
+      <h2>A Letter From Your Diyamol</h2>
+
+      <p style="text-align:center">
+        A few words from your daughter, written with all my love.
+      </p>
+
+      <div id="myParchment">
+
+        <div class="parchment-ribbon">♡ With Love ♡</div>
+
+        <p id="diaLetter"></p>
+
+      </div>
+
+      <button id="unrollBtn">Unroll Your Letter ♡</button>
+
     </section>
 
-    <section class="yehazel section hidden" id="yehazel">
-      <div class="starline">✧ &nbsp; A FINAL LITTLE SURPRISE &nbsp; ✧</div>
-      <p class="eyebrow">For the dream you've carried in your heart</p>
+
+    <!-- VIDEO -->
+    <section id="familyVideo" class="section hidden">
+
+      <h2>A Little Memory for You</h2>
+
+      <p style="text-align:center">
+        Because some memories deserve to be watched again and again. ❤️
+      </p>
+
+      <video
+        id="birthdayVideo"
+        controls
+        playsinline
+        preload="metadata"
+        poster="IMG-20261108-WA0130.jpg">
+
+        <source
+          src="HnVideoEditor_2026_11_09_152933892.mp4"
+          type="video/mp4">
+
+        Your browser does not support this video.
+
+      </video>
+
+    </section>
+
+
+    <!-- LETTERS FROM GAMU AND ANNLITTA -->
+    <section id="otherLetters" class="section hidden">
+
+      <h2>Letters From Your Favourite People</h2>
+
+      <p style="text-align:center">
+        Two little letters, filled with memories, gratitude and love. ❤️
+      </p>
+
+
+      <!-- GAMU CARD -->
+      <button
+        id="gamuCard"
+        class="letter-card"
+        type="button"
+        aria-expanded="false">
+
+        <img
+          src="IMG-20261108-WA0130.jpg"
+          alt="Gamu">
+
+        <h3>Gamu</h3>
+
+        <p>A letter written with love ♡</p>
+
+        <span>Tap to read ↓</span>
+
+      </button>
+
+
+      <!-- ANN LITTA LETTER -->
+      <div id="gamuLetter" class="letter-content" hidden></div>
+
+
+      <!-- ANNLITTA CARD -->
+      <button
+        id="annCard"
+        class="letter-card"
+        type="button"
+        aria-expanded="false">
+
+        <img
+          src="IMG-20260513-WA0016.jpg"
+          alt="Annlitta">
+
+        <h3>Annlitta</h3>
+
+        <p>A little piece of her heart ♡</p>
+
+        <span>Tap to read ↓</span>
+
+      </button>
+
+
+      <!-- GAMU LETTER -->
+      <div id="annLetter" class="letter-content" hidden></div>
+
+    </section>
+
+
+    <!-- CLOSING -->
+    <section id="closing" class="section hidden">
+
+      <h2>Forever My Ammeeee</h2>
+
+      <p>
+        Ammee, I'll always choose you as my mother
+        in every lifetimes I get!
+      </p>
+
+      <p>
+        Nanni eeshoyee... For my mother ❤️
+      </p>
+
+      <p style="margin-top:30px">
+        From your Diyamol, Appa, Kuttamma &amp; Kozhamachy
+      </p>
+
+      <p style="margin-top:15px">
+        Gamu, Annlitta and the entire adhoc family.
+      </p>
+
+      <div class="closing-decoration">
+        ♡ ✧ 🦋 ❀ 🕊️ ❀ 🦋 ✧ ♡
+      </div>
+
+    </section>
+
+
+    <!-- YEHAZEL -->
+    <section id="yehazel" class="section hidden">
+
       <h2>YEHAZEL</h2>
-      <p class="yeha-tagline">A little platform for a beautiful purpose.</p>
 
-      <div class="yeha-card">
-        <p>Ammeee... you've always wanted to spread the Word of God, share His love, and let His light reach more hearts. ❤️</p>
-        <p>So here's something for that dream you've carried in your heart — a little platform of your own, where you can share His Word, inspire souls, and sow seeds of faith.</p>
-        <p>May every word you share bring someone closer to Him. ✨</p>
-      </div>
+      <h3>A Little Platform for a Beautiful Purpose</h3>
 
-      <p class="yeha-motto">Your dream. Your mission. Your YEHAZEL.</p>
-      <a class="primary-btn link-btn" href="https://www.instagram.com/yehz.el?vrfl=MXVpcm45bjU3aWJteg==" target="_blank" rel="noopener">Discover your new platform ♡</a>
-      <p class="footer-note">Made with endless love, just for you. ♡</p>
+      <p>
+        Ammeee... you've always wanted to spread the Word of God,
+        share His love, and let His light reach more hearts. ❤️
+      </p>
+
+      <p>
+        So here's something for that dream you've carried in your heart —
+        a little platform of your own, where you can share His Word,
+        inspire souls, and sow seeds of faith.
+      </p>
+
+      <p>
+        May every word you share bring someone closer to Him. ✨
+      </p>
+
+      <a
+        href="https://www.instagram.com/yehz.el?vrfl=MXVpcm45bjU3aWJteg=="
+        target="_blank"
+        rel="noopener noreferrer">
+
+        DISCOVER YOUR NEW PLATFORM ♡
+
+      </a>
+
+      <p style="margin-top:25px">
+        Your dream. Your mission. Your YEHAZEL.
+      </p>
+
     </section>
+
   </main>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
+
+  <!-- SCRAPBOOK DOODLES -->
+  <div id="doodleTrail" aria-hidden="true"></div>
+
+
+  <!-- PHOTO LIGHTBOX -->
+  <div id="lightbox" aria-hidden="true">
+
     <button id="closeLightbox" aria-label="Close photo">×</button>
-    <img id="lightboxImage" alt="A family memory">
+
+    <img id="lightboxImage" src="" alt="Family memory">
+
   </div>
 
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop preload="auto">
+
+    <source
+      src="AZuAoXSp2YNOmZZEf7WQ+5alVZs9UfhY.m4a"
+      type="audio/mp4">
+
+  </audio>
+
+
+  <!-- MUSIC CONTROL -->
+  <button id="musicToggle" aria-label="Toggle background music">
+    ♫
+  </button>
+
+
+  <!-- SCRIPT -->
   <script src="script.js"></script>
+
 </body>
 </html>
- 
