@@ -7,110 +7,110 @@
 <meta name="theme-color" content="#ffe8f0">
 <title>Happy Birthday, Ammeeee ❤️</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap');
-
-:root {
-  --pink:#f7c6d5;
-  --rose:#d77d9d;
-  --deep:#a84e72;
-  --light:#fff5f8;
-  --gold:#c69b56;
-  --ink:#654455;
-  --paper:#fffaf4;
+:root{
+ --pink:#f7c6d5;--rose:#d77d9d;--deep:#a84e72;
+ --light:#fff5f8;--gold:#c69b56;--ink:#654455;
+ --paper:#fffaf4;--soft:#ffe8f0;
 }
-
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:Poppins,sans-serif;
-  color:var(--ink);
-  background:linear-gradient(145deg,#fff3f7,#ffe6ef,#fff8f0);
-  overflow-x:hidden;
+ font-family:Poppins,sans-serif;color:var(--ink);
+ background:
+ radial-gradient(circle at 10% 15%,#fff 0 2px,transparent 3px),
+ radial-gradient(circle at 90% 30%,#f5c8d7 0 3px,transparent 4px),
+ linear-gradient(145deg,#fff3f7,#ffe6ef,#fff8f0);
+ overflow-x:hidden;
 }
 button{font:inherit;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
-#app{max-width:850px;margin:auto;padding:14px;position:relative}
+#app{max-width:900px;margin:auto;padding:14px;position:relative}
 .scene{
-  display:none;
-  min-height:88vh;
-  padding:55px 22px;
-  margin:12px auto 35px;
-  border:1px solid #f2c9d7;
-  border-radius:28px;
-  background:rgba(255,250,252,.94);
-  box-shadow:0 12px 40px rgba(174,90,124,.12);
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-  animation:sceneIn .7s ease both;
+ display:none;min-height:88vh;padding:55px 22px;margin:12px auto 35px;
+ border:1px solid #f2c9d7;border-radius:28px;
+ background:rgba(255,250,252,.96);
+ box-shadow:0 12px 40px rgba(174,90,124,.12);
+ text-align:center;position:relative;overflow:hidden;isolation:isolate;
+ animation:sceneIn .7s ease both;
 }
 .scene.active{display:flex;flex-direction:column;align-items:center;justify-content:center}
-.scene:before{
-  content:"♡  ✧  ❀  ✧  ♡";
-  color:#d78ba5;
-  letter-spacing:12px;
-  font-size:20px;
-  margin-bottom:25px;
+.scene:before,.scene:after{
+ color:#d78ba5;letter-spacing:9px;font-size:19px;
+ position:relative;z-index:1;
 }
-.scene:after{
-  content:"❀  ୨୧  ❀";
-  color:#c99b66;
-  letter-spacing:12px;
-  font-size:19px;
-  margin-top:30px;
-}
+.scene:before{content:"♡  ✧  🎀  ✿  ✧  ♡";margin-bottom:24px}
+.scene:after{content:"✧  ♡  🌷  ♡  ✧";margin-top:28px}
 h1,h2,h3{font-family:"Playfair Display",serif;color:var(--deep)}
 h1{font-size:clamp(35px,8vw,66px);line-height:1.2}
 h2{font-size:clamp(27px,6vw,42px);margin-bottom:20px}
 h3{font-size:25px;margin-bottom:12px}
 p{line-height:1.9;margin:10px 0}
-.script{font-family:"Great Vibes",cursive;font-size:clamp(42px,9vw,72px);color:#c46c91}
+.script{font-family:"Great Vibes",cursive;font-size:clamp(43px,9vw,76px);color:#c46c91}
 .small{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#a77788}
 .subtitle{font-family:"Cormorant Garamond",serif;font-size:24px}
 .next{
-  border:0;border-radius:50px;
-  padding:14px 32px;margin-top:28px;
-  background:linear-gradient(135deg,#df91ad,#bc6288);
-  color:white;font-weight:600;letter-spacing:1px;
-  box-shadow:0 8px 20px #d58aa54a;
-  transition:.25s;
+ border:0;border-radius:50px;padding:14px 30px;margin-top:24px;
+ background:linear-gradient(135deg,#df91ad,#bc6288);
+ color:white;font-weight:600;letter-spacing:1px;
+ box-shadow:0 8px 20px #d58aa54a;transition:.25s;
 }
 .next:hover{transform:translateY(-3px);box-shadow:0 12px 24px #d58aa566}
-.back{
-  background:transparent;border:1px solid #e7b7c8;color:#a85c7b;
-  border-radius:30px;padding:9px 20px;margin-top:12px;
-}
+.next:disabled{opacity:.65;cursor:wait}
 .ornament{font-size:30px;letter-spacing:8px;margin:18px}
 .card{
-  background:white;border:1px solid #f0ceda;border-radius:22px;
-  padding:24px;width:100%;max-width:680px;margin:18px auto;
-  box-shadow:0 8px 25px #a85c7b12;
+ background:white;border:1px solid #f0ceda;border-radius:22px;
+ padding:24px;width:100%;max-width:680px;margin:18px auto;
+ box-shadow:0 8px 25px #a85c7b12;
 }
 .hidden{display:none!important}
+.gold{color:#bb8a3e}
+.doodle{
+ position:absolute;z-index:-1;pointer-events:none;opacity:.25;
+ color:#cf7e9c;font-size:clamp(28px,6vw,55px);
+ animation:doodleFloat 5s ease-in-out infinite;
+}
+.d1{top:7%;left:5%;transform:rotate(-18deg)}
+.d2{top:13%;right:5%;transform:rotate(15deg);animation-delay:1s}
+.d3{bottom:9%;left:7%;transform:rotate(12deg);animation-delay:2s}
+.d4{bottom:8%;right:7%;transform:rotate(-12deg);animation-delay:3s}
+.d5{top:48%;right:3%;font-size:24px;animation-delay:1.5s}
+@keyframes doodleFloat{0%,100%{translate:0 0}50%{translate:0 -10px}}
+@keyframes sceneIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes bob{50%{transform:translateY(-9px)}}
+@keyframes sparkleUp{from{opacity:1;transform:translateY(0) scale(.5)}to{opacity:0;transform:translateY(-100px) scale(1.5)}}
+@keyframes dustFade{to{opacity:0;transform:translateY(-30px) scale(.2)}}
+@keyframes photoIn{from{opacity:0;transform:translateY(18px) rotate(0)}to{opacity:1}}
+@keyframes pulse{50%{transform:scale(1.05)}}
 
 /* Opening */
-#scene1{background:
+#s1{
+ background:
  radial-gradient(circle at 10% 20%,#fff 0 4%,transparent 5%),
  radial-gradient(circle at 90% 70%,#fbd5e1 0 5%,transparent 6%),
- linear-gradient(145deg,#fff8fb,#ffe3ed)}
+ linear-gradient(145deg,#fff8fb,#ffe3ed);
+}
 .birthday-cake{font-size:72px;animation:bob 3s infinite}
-.open-photos{display:flex;justify-content:center;gap:12px;margin:20px 0}
+.open-photos{display:flex;justify-content:center;gap:12px;margin:20px 0;width:100%}
 .open-photos img{
- width:clamp(80px,25vw,145px);height:120px;object-fit:cover;
- padding:6px 6px 19px;background:white;
- box-shadow:0 5px 15px #8b536422;
- transform:rotate(-5deg);
+ width:clamp(80px,25vw,145px);height:clamp(100px,30vw,150px);
+ object-fit:cover;padding:6px 6px 19px;background:white;
+ box-shadow:0 5px 15px #8b536422;transform:rotate(-5deg);
+ cursor:pointer;
 }
 .open-photos img:nth-child(2){transform:rotate(5deg);margin-top:15px}
+.open-photos img:nth-child(3){transform:rotate(-2deg);margin-top:5px}
 
 /* Bible */
 .bible-button{
  border:0;background:transparent;font-size:110px;
- filter:drop-shadow(0 8px 7px #b47c8b44);
- animation:bob 3s infinite;
+ filter:drop-shadow(0 8px 7px #b47c8b44);animation:bob 3s infinite;
 }
-.bible-book{font-size:14px;color:#a85c7b;letter-spacing:2px}
+.bible-book{font-size:13px;color:#a85c7b;letter-spacing:2px}
 .verse{
  background:#fff9f1;border:2px solid #e5c48d;border-radius:18px;
  padding:25px;margin:20px auto;width:100%;max-width:650px;
@@ -118,20 +118,25 @@ p{line-height:1.9;margin:10px 0}
  box-shadow:0 0 30px #e9c98b55;
 }
 .verse-ref{color:#a66d83;font-weight:600}
-.reflection{text-align:left;white-space:pre-line;font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1.85}
+.reflection{
+ text-align:left;white-space:pre-line;
+ font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1.85;
+}
 
-/* Surprise calculator */
-.meter{height:18px;background:#f7dce6;border-radius:30px;overflow:hidden;margin:22px 0}
-.meter-fill{height:100%;width:0;background:linear-gradient(90deg,#e58eae,#d0a05b);border-radius:30px;transition:width .12s}
-.result{font-weight:600;color:#a84e72;font-size:19px;min-height:55px}
+/* Calculator */
+.meter{height:18px;background:#f7dce6;border-radius:30px;overflow:hidden;margin:22px 0;width:100%}
+.meter-fill{
+ height:100%;width:0;background:linear-gradient(90deg,#e58eae,#d0a05b);
+ border-radius:30px;transition:width .1s linear;
+}
+.result{font-weight:600;color:#a84e72;font-size:19px;min-height:65px}
 
 /* Scroll letter */
-.scroll-wrap{width:100%;max-width:650px;margin:20px auto}
+.scroll-wrap{width:100%;max-width:650px;margin:20px auto;filter:drop-shadow(0 10px 12px #9d6b5220)}
 .scroll-roll{
  background:linear-gradient(90deg,#d8b77f,#fff1cf,#d8b77f);
- border:2px solid #c69b56;border-radius:50%;
- height:25px;box-shadow:0 4px 8px #765b3033;
- position:relative;z-index:2;
+ border:2px solid #c69b56;border-radius:50%;height:25px;
+ box-shadow:0 4px 8px #765b3033;position:relative;z-index:2;
 }
 .scroll-paper{
  background:#fff8e8;border:1px solid #d8bd8a;
@@ -140,93 +145,124 @@ p{line-height:1.9;margin:10px 0}
  text-align:left;white-space:pre-line;
  font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.9;
 }
-.scroll-wrap.open .scroll-paper{max-height:4000px;padding:30px 22px}
+.scroll-wrap.open .scroll-paper{max-height:5000px;padding:30px 22px}
 .scroll-wrap.open .scroll-roll{border-radius:8px}
 
 /* Letters */
 .letter-paper{
  width:100%;max-width:680px;text-align:left;
  background:repeating-linear-gradient(#fffaf1 0 34px,#f3e1e2 35px);
- border:1px solid #e9c9b8;border-radius:7px;
- padding:30px 23px;box-shadow:0 10px 30px #765b3018;
+ border:1px solid #e9c9b8;border-radius:7px;padding:30px 23px;
+ box-shadow:0 10px 30px #765b3018;
  font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.85;
  white-space:pre-line;overflow-wrap:anywhere;
 }
-.letter-paper:before{content:"♡  Written with love  ♡";display:block;text-align:center;color:#c47791;font-family:"Great Vibes",cursive;font-size:31px;margin-bottom:20px}
-.envelope{font-size:70px;cursor:pointer;transition:.3s}
+.letter-paper:before{
+ content:"♡  Written with love  ♡";display:block;text-align:center;
+ color:#c47791;font-family:"Great Vibes",cursive;font-size:31px;margin-bottom:20px;
+}
+.letter-paper:after{
+ content:"✿  ♡  ✧  🎀";display:block;text-align:center;
+ color:#c77d98;margin-top:18px;letter-spacing:8px;
+}
+.envelope{font-size:70px;cursor:pointer;transition:.3s;filter:drop-shadow(0 7px 8px #bd7d9433)}
 .envelope:hover{transform:scale(1.12) rotate(-5deg)}
 .letter-instruction{font-size:13px;color:#a77788}
 
-/* Small surprises */
+/* Surprises */
 .surprise-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;max-width:600px}
 .surprise-tile{
  border:1px solid #edc7d4;background:#fff;border-radius:18px;
  padding:18px 10px;min-height:110px;color:#a85c7b;
- box-shadow:0 5px 15px #a85c7b10;
+ box-shadow:0 5px 15px #a85c7b10;transition:.25s;
 }
+.surprise-tile:hover{transform:translateY(-5px) rotate(-1deg);box-shadow:0 12px 25px #a85c7b20}
 .surprise-tile span{display:block;font-size:30px;margin-bottom:8px}
-.secret-message{padding:20px;background:#fff0f5;border-radius:15px;margin-top:15px;display:none}
+.secret-message{
+ padding:20px;background:#fff0f5;border:1px dashed #df9bb2;
+ border-radius:15px;margin-top:15px;display:none;
+}
 
-/* Scrapbook */
-.scrapbook{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px;margin-top:22px}
+/* Photos */
+.scrapbook{
+ width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:30px 16px;margin-top:22px;align-items:start;
+}
 .polaroid{
  background:#fffefa;padding:8px 8px 30px;
- box-shadow:0 7px 20px #61445122;
- transform:rotate(-3deg);position:relative;
- border:1px solid #eadfe0;
- animation:photoIn .7s ease both;
- cursor:pointer;
+ box-shadow:0 7px 20px #61445122;transform:rotate(-3deg);
+ position:relative;border:1px solid #eadfe0;animation:photoIn .7s ease both;
+ cursor:pointer;min-width:0;transition:transform .3s,box-shadow .3s;
 }
 .polaroid:nth-child(even){transform:rotate(4deg);margin-top:25px}
-.polaroid img{width:100%;height:145px;object-fit:cover;display:block}
+.polaroid:hover{transform:rotate(0) scale(1.035);box-shadow:0 15px 30px #61445135;z-index:4}
+.polaroid img{width:100%;height:clamp(125px,28vw,210px);object-fit:cover;display:block}
 .polaroid figcaption{font-family:"Great Vibes",cursive;font-size:19px;color:#956d79;padding-top:8px}
 .polaroid:before{
  content:"";position:absolute;top:-9px;left:35%;width:55px;height:18px;
- background:#edc9d1bb;transform:rotate(-7deg)
+ background:#edc9d1bb;transform:rotate(-7deg);z-index:2;
 }
+.photo-missing{
+ min-height:130px;display:grid;place-items:center;padding:12px;
+ background:repeating-linear-gradient(45deg,#fff1f5,#fff1f5 10px,#ffe5ed 10px,#ffe5ed 20px);
+ color:#a85c7b;font-family:"Cormorant Garamond",serif;text-align:center;
+}
+.memory-sprinkle{
+ width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+ align-items:center;gap:12px;margin:24px auto;
+}
+.memory-sprinkle .polaroid{width:100%;padding:5px 5px 22px}
+.memory-sprinkle .polaroid:nth-child(2){transform:rotate(5deg);margin-top:24px}
+.memory-sprinkle .polaroid:nth-child(3){transform:rotate(-5deg);margin-top:-8px}
+.memory-sprinkle img{width:100%;height:clamp(85px,23vw,155px);object-fit:cover}
+.memory-sprinkle figcaption{font-size:15px}
 .photo-modal{
  display:none;position:fixed;inset:0;background:#2d1c28ed;
  z-index:1000;align-items:center;justify-content:center;padding:20px;
 }
 .photo-modal.open{display:flex}
-.photo-modal img{max-width:95%;max-height:82vh;border:10px solid white}
-.photo-modal button{position:absolute;right:20px;top:15px;color:white;background:none;border:0;font-size:40px}
+.photo-modal img{max-width:95%;max-height:82vh;border:10px solid white;object-fit:contain}
+.photo-modal button{
+ position:absolute;right:20px;top:15px;color:white;background:none;border:0;font-size:40px;
+}
 
-/* Video and reveal */
+/* Video and YEHAZEL */
 video{width:100%;max-width:720px;border-radius:18px;margin-top:20px;box-shadow:0 10px 30px #6c435222}
 .yehzel{
  background:linear-gradient(145deg,#fff0f6,#f9e5d5);
  border:1px solid #e9c28d;padding:28px;border-radius:22px;
  box-shadow:0 0 40px #e5b66d55;
 }
-.gold{color:#bb8a3e}
 #musicControl{
  position:fixed;right:16px;bottom:16px;z-index:500;
  border:1px solid #e5b7c7;background:#fff8fb;color:#a85c7b;
- width:48px;height:48px;border-radius:50%;font-size:20px;
+ width:50px;height:50px;border-radius:50%;font-size:20px;
  box-shadow:0 5px 15px #8c526122;
 }
 #dust{position:fixed;inset:0;pointer-events:none;z-index:400;overflow:hidden}
-.dust-particle{position:absolute;width:4px;height:4px;border-radius:50%;background:#e6bc68;box-shadow:0 0 9px #e9c36f;animation:dustFade 1.5s forwards}
+.dust-particle{
+ position:absolute;width:4px;height:4px;border-radius:50%;
+ background:#e6bc68;box-shadow:0 0 9px #e9c36f;animation:dustFade 1.5s forwards;
+}
 #sparkles{position:fixed;inset:0;pointer-events:none;z-index:450;overflow:hidden}
 .sparkle{position:absolute;animation:sparkleUp 1.6s ease-out forwards}
 #progress{height:4px;background:#e9a9bf;position:fixed;top:0;left:0;width:0;z-index:800}
 footer{padding:25px;text-align:center;color:#b17b91;font-family:"Great Vibes",cursive;font-size:28px}
-
-@keyframes sceneIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-@keyframes bob{50%{transform:translateY(-9px)}}
-@keyframes photoIn{from{opacity:0;transform:translateY(20px) rotate(0)}to{opacity:1}}
-@keyframes sparkleUp{from{opacity:1;transform:translateY(0) scale(.5)}to{opacity:0;transform:translateY(-100px) scale(1.5)}}
-@keyframes dustFade{to{opacity:0;transform:translateY(-30px) scale(.2)}}
-
 @media(max-width:500px){
  #app{padding:8px}
  .scene{padding:42px 16px;min-height:85vh;border-radius:22px}
  .reflection,.letter-paper{font-size:18px}
  .verse{font-size:21px}
- .scrapbook{gap:20px 10px}
+ .scrapbook{gap:22px 10px}
+ .polaroid{padding:6px 6px 24px}
  .polaroid img{height:120px}
  .surprise-grid{gap:9px}
+ .memory-sprinkle{gap:7px}
+ .memory-sprinkle .polaroid{padding:4px 4px 18px}
+ .memory-sprinkle figcaption{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
 }
 </style>
 </head>
@@ -237,49 +273,52 @@ footer{padding:25px;text-align:center;color:#b17b91;font-family:"Great Vibes",cu
 <div id="sparkles"></div>
 
 <audio id="music" loop preload="auto">
-  <source src="AZuAoXSp2YNOmZZEf7WQ+5alVZs9UfhY.m4a" type="audio/mp4">
+ <source src="AZuAoXSp2YNOmZZEf7WQ+5alVZs9UfhY.m4a" type="audio/mp4">
 </audio>
-<button id="musicControl" aria-label="Toggle music">♫</button>
+<button id="musicControl" aria-label="Toggle music" title="Play or pause music">♫</button>
 
 <div id="app">
 
-<!-- SCENE 1: OPENING -->
+<!-- 1. OPENING -->
 <section class="scene active" id="s1">
-  <div class="birthday-cake">🎂</div>
-  <div class="small">A little surprise made with all my love</div>
-  <h1 class="script">Happy Birthday</h1>
-  <h1>MY AMMMEEE! ❤️</h1>
-  <div class="open-photos">
-    <img src="IMG-20261108-WA0034.jpg" alt="Family memory">
-    <img src="IMG-20261108-WA0035.jpg" alt="Family memory">
-    <img src="IMG-20261108-WA0036.jpg" alt="Family memory">
-  </div>
-  <p class="subtitle">To the heart of our family, our greatest blessing.</p>
-  <div class="ornament">🎀 💗 🦋 💗 🎀</div>
-  <button class="next" onclick="go(2)">OPEN YOUR SURPRISE ♡</button>
+ <div class="birthday-cake">🎂</div>
+ <div class="small">A little surprise made with all my love</div>
+ <h1 class="script">Happy Birthday</h1>
+ <h1>MY AMMMEEE! ❤️</h1>
+ <div class="open-photos" id="openingPhotos">
+  <img src="IMG-20261108-WA0034.jpg" alt="Family memory">
+  <img src="IMG-20261108-WA0035.jpg" alt="Family memory">
+  <img src="IMG-20261108-WA0036.jpg" alt="Family memory">
+ </div>
+ <p class="subtitle">To the heart of our family, our greatest blessing.</p>
+ <div class="ornament">🎀 💗 🦋 💗 🎀</div>
+ <p>Made with a little bit of magic and a whole lot of love. ✨</p>
+ <button class="next" onclick="startMusic();go(2)">OPEN YOUR SURPRISE ♡</button>
 </section>
 
-<!-- SCENE 2: BIBLE -->
+<!-- 2. BIBLE -->
 <section class="scene" id="s2">
-  <div class="small">A little reminder from above</div>
-  <h2>A Vachanam for Ammeeee</h2>
-  <button class="bible-button" onclick="openBible()" aria-label="Open the Bible">📖</button>
-  <div class="bible-book">TAP THE LITTLE BIBLE TO OPEN ♡</div>
-  <div id="bibleVerse" class="hidden">
-    <div class="verse">
-      എന്‍റെ ദൈവം തന്‍റെ മഹത്വത്തിന്‍റെ സമ്പന്നതയില്‍നിന്ന്
-      യേശുക്രിസ്തുവഴി നിങ്ങള്‍ക്ക് ആവശ്യമുള്ളതെല്ലാം നല്‍കും.
-      <p class="verse-ref">ഫിലിപ്പി 4 : 19 ❤️‍🔥</p>
-    </div>
+ <div class="small">A little reminder from above</div>
+ <h2>A Vachanam for Ammeeee</h2>
+ <button class="bible-button" onclick="openBible()" aria-label="Open the Bible">📖</button>
+ <div class="bible-book">TAP THE LITTLE BIBLE TO OPEN ♡</div>
+ <div id="bibleVerse" class="hidden">
+  <div class="verse">
+   എന്‍റെ ദൈവം തന്‍റെ മഹത്വത്തിന്‍റെ സമ്പന്നതയില്‍നിന്ന്
+   യേശുക്രിസ്തുവഴി നിങ്ങള്‍ക്ക് ആവശ്യമുള്ളതെല്ലാം നല്‍കും.
+   <p class="verse-ref">ഫിലിപ്പി 4 : 19 ❤️‍🔥</p>
   </div>
-  <button class="next" onclick="go(3)">NEXT ♡</button>
+  <p class="subtitle">A promise that reminds me of you, Ammeee. ❤️</p>
+ </div>
+ <button class="next" onclick="go(3)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 3: REFLECTION -->
+<!-- 3. REFLECTION -->
 <section class="scene" id="s3">
-  <div class="small">A little something from my heart</div>
-  <h2>Why This Vachanam Reminds Me of You</h2>
-  <div class="card reflection" id="reflectionText">Ammeee🥰 ... This is one of the first Vachanams😇 you taught me.... Innu ammakk vendi njn vachanam nookiyapo, othiri vachanams manasikoode kadann poyi🫠🫠... Bt enne strike cheythe itha... 🫣
+ <div class="small">A little something from my heart</div>
+ <h2>Why This Vachanam Reminds Me of You</h2>
+ <div class="card reflection">
+Ammeee🥰 ... This is one of the first Vachanams😇 you taught me.... Innu ammakk vendi njn vachanam nookiyapo, othiri vachanams manasikoode kadann poyi🫠🫠... Bt enne strike cheythe itha... 🫣
 
 Ennu vecha ammayude jeevithathil othiri prashnangalum😧 othiri prathisandhikalum🤧😭 ellam undayittundu. Pakshe anneram Eesho✨ ammayude koode undayirunn👼🏻👼🏻... Eesho✨ ammayude koode undayirunnu ennathilum upari amma orikkalum Eeshoyude kai vittittilla.🫴🏻🫳🏻 Like cheriya😕 prathisandhikal onnum alla, cheruppam thottu neritthe👧🏻. Valiya valiya😨🫨 prathisandhikalum prayaasangalum ellam amma nerittittum amma Eeshoyude✨ kai pidichittundayirunnu🫴🏻🫳🏻. Kaaranam ammaykku ariyamaayirunnu Eesho✨ ammaykku aavashyamullathu aavashya samayath tharumennu🕰️💸🥭❤️.
 
@@ -302,30 +341,32 @@ So, at the end of the day, ee vachanam realistic aayittu oraalude life-il kaanic
 Because amma ee vachanathil athrayum adiyurachu vishwasikkunna oraalanu.🫶🏻❤️
 
 So, ee vachanam njan ammaykkaayittu dedicate cheyyunnu.
-Ummaaa😘😘</div>
-  <button class="next" onclick="go(4)">NEXT ♡</button>
+Ummaaa😘😘
+ </div>
+ <div class="memory-sprinkle" id="memoryReflection"></div>
+ <button class="next" onclick="go(4)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 4: LOVE CALCULATOR -->
+<!-- 4. LOVE CALCULATOR -->
 <section class="scene" id="s4">
-  <div class="small">A very important scientific test</div>
-  <h2>How Much Does Ammeee Love Her Diyamol?</h2>
-  <div style="font-size:65px">💗 🧪 💗</div>
-  <p>Calculating a mother's love...</p>
-  <div class="meter"><div class="meter-fill" id="loveFill"></div></div>
-  <div class="result" id="loveResult">Waiting for calculation...</div>
-  <button class="next" onclick="calculateLove()">CALCULATE LOVE ♡</button>
-  <button class="next" onclick="go(5)">NEXT SURPRISE ♡</button>
+ <div class="small">A very important scientific test</div>
+ <h2>How Much Does Ammeee Love Her Diyamol?</h2>
+ <div style="font-size:65px">💗 🧪 💗</div>
+ <p>Calculating a mother's love...</p>
+ <div class="meter"><div class="meter-fill" id="loveFill"></div></div>
+ <div class="result" id="loveResult">Waiting for calculation... 💗</div>
+ <button class="next" id="calculateButton" onclick="calculateLove()">CALCULATE LOVE ♡</button>
+ <button class="next" onclick="go(5)">NEXT SURPRISE ♡</button>
 </section>
 
-<!-- SCENE 5: DIYAMOL LETTER -->
+<!-- 5. DIYAMOL LETTER -->
 <section class="scene" id="s5">
-  <div class="small">The words I wish I could say a thousand times</div>
-  <h2>Diyamol's Letter for You</h2>
-  <p>Untie the ribbon and open your little letter, Ammeee. 🎀</p>
-  <div class="scroll-wrap" id="scroll">
-    <div class="scroll-roll"></div>
-    <div class="scroll-paper">
+ <div class="small">The words I wish I could say a thousand times</div>
+ <h2>Diyamol's Letter for You</h2>
+ <p>Untie the ribbon and open your little letter, Ammeee. 🎀</p>
+ <div class="scroll-wrap" id="scroll">
+  <div class="scroll-roll"></div>
+  <div class="scroll-paper">
 Ammeee... Happiest birthday ammeee😭😭❤️❤️ipo enna prynm enn polum i dont knoww🫣bt enik ammene othiri ishtavaa😘...
 
 Ende lyfil kittiya ettavum valya blessing aanu ende ammaa🫶🏻... Ithrem understanding and caring aaya orale njn jeevithathil kandit illa ammee... Forever njn eesokk nanni prym... Ammene enik thannathil😭😭❤️
@@ -335,34 +376,52 @@ Ammeee... Pandokke njn orkkuvayirunn ammene pole aakaruth enn...vere onnm kondal
 Amma oru killadi thanne😂🔥amma bhayankara variety aan... I don't know enna prynm enn bt...
 
 Othiri nanni ond ammee... For everything... Ellm pryn thodngiyal ammakk ariyalo theerulla😂athpoleya enik ammaa... Enne ithrem snehikunneyum care cheyunnayum vere aarelum ondoo ammee🙂enne maathram alla...mothathil enthore kryngla amma cheyune... Adhoc...6 groups... Athinde idakk veetil kryngl.... Kuttamma... Kozhamachy.... Service team.... Sushrushakal... Everything... Again... Amma oru sambhavam attooo... Ithellam pottee.... You raised a daughter ammeee.... Ivide vannitt oro pillerdem life kaanumbo njn orkum annu amma enne proper aayi valarthiyekond aanalo njn ithrem miduki aayit jeevikune ennn.... Nannii ond ammeee.... Ellathinum😭😭othiri nanni eeshoye... Enik ammene thannathil😭😭❤️
-    </div>
-    <div class="scroll-roll"></div>
   </div>
-  <button class="next" onclick="openScroll()">UNROLL MY LETTER ♡</button>
-  <button class="next" onclick="go(6)">NEXT ♡</button>
+  <div class="scroll-roll"></div>
+ </div>
+ <button class="next" onclick="openScroll()">UNROLL MY LETTER ♡</button>
+ <div class="memory-sprinkle" id="memoryLetter"></div>
+ <button class="next" onclick="go(6)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 6: TINY SURPRISES -->
+<!-- 6. TINY SURPRISES -->
 <section class="scene" id="s6">
-  <div class="small">A few little things about you</div>
-  <h2>Ammeeee, Did You Know? 💗</h2>
-  <div class="surprise-grid">
-    <button class="surprise-tile" onclick="reveal('You are the safest place in so many hearts. ❤️')"><span>🏡</span>YOUR SUPERPOWER</button>
-    <button class="surprise-tile" onclick="reveal('You make ordinary days feel like blessings. 🌷')"><span>🌷</span>YOUR MAGIC</button>
-    <button class="surprise-tile" onclick="reveal('Your hugs deserve their own award. 🫂')"><span>🫂</span>YOUR AWARD</button>
-    <button class="surprise-tile" onclick="reveal('You are loved more than words can ever explain. 💗')"><span>💌</span>YOUR SECRET</button>
-  </div>
-  <div class="secret-message" id="tinyMessage"></div>
-  <button class="next" onclick="go(7)">NEXT ♡</button>
+ <div class="small">A few little things about you</div>
+ <h2>Ammeeee, Did You Know? 💗</h2>
+ <div class="surprise-grid">
+  <button class="surprise-tile" onclick="reveal('You are the safest place in so many hearts. ❤️')"><span>🏡</span>YOUR SUPERPOWER</button>
+  <button class="surprise-tile" onclick="reveal('You make ordinary days feel like blessings. 🌷')"><span>🌷</span>YOUR MAGIC</button>
+  <button class="surprise-tile" onclick="reveal('Your hugs deserve their own award. 🫂')"><span>🫂</span>YOUR AWARD</button>
+  <button class="surprise-tile" onclick="reveal('You are loved more than words can ever explain. 💗')"><span>💌</span>YOUR SECRET</button>
+ </div>
+ <div class="secret-message" id="tinyMessage"></div>
+ <button class="next" onclick="go(7)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 7: GAMU -->
+<!-- 7. GAMU LETTER -->
 <section class="scene" id="s7">
-  <div class="small">A little letter, a lot of love</div>
-  <h2>Gamu's Letter for You</h2>
-  <div class="envelope" onclick="revealLetter('gamuLetter')">💌</div>
-  <p class="letter-instruction">Tap the envelope to open Gamu's letter</p>
-  <article id="gamuLetter" class="letter-paper hidden">
+ <div class="small">A little letter, a lot of love</div>
+ <h2>Gamu's Letter for You</h2>
+ <div class="envelope" onclick="revealLetter('gamuLetter')">💌</div>
+ <p class="letter-instruction">Tap the envelope to open Gamu's letter</p>
+ <article id="gamuLetter" class="letter-paper hidden">
+ചേച്ചിയെ... ഹാപ്പി birthday 🎉... കർത്താവ് ജീവിതത്തിൽ തന്ന അനുഗ്രഹങ്ങളിൽ ഒന്നാണ് ചേച്ചി☺️... തകർന്ന് വീഴാമായിരുന്ന പല അവസരങ്ങളിലും ചേർത്ത് പിടിച്ചു എല്ലാറ്റിലും ഉപരിയായി ഈശോയുടെ സ്നേഹം അനുഭവിപ്പിക്കാൻ ഒക്കെ  എടുത്ത ത്യാഗത്തിന് ഒരുപാട് നന്ദി...
+
+ഫോർമൽ ആയി പോകരുതെന്ന് ഒക്കെ ഓർത്തെങ്കിലും എഴുതി വന്നപ്പോ അങ്ങനെ ആയോ എന്നൊരു സംശയം 😅ചേച്ചിയോട് ഇതിനു മുന്നേ ഞാൻ പറഞ്ഞിട്ടുണ്ടോ എന്ന് എനിക്ക് അറിയില്ല... ബട്ട്‌ you are my elder sister👭... ശകാരിക്കാനും തിരുത്താനും എല്ലാറ്റിലും ഉപരി എല്ലാം പങ്ക് വെക്കാനുമായിട്ട് ഈശോ തന്ന സമ്മാനം🤩ഒത്തിരി വേദനിപ്പിച്ചിട്ടുണ്ടെന്ന് അറിയാം... സോറി🫣and thankyou for loving me always😍
+
+B'day wishes from ur gamu, taru and ur kunjaava🥰🥰🥰God blesss youuuu... Ummaaa😘😘😘😘I think u will be the first one who wrote ummaa to me😅
+ </article>
+ <div class="memory-sprinkle" id="memoryGamu"></div>
+ <button class="next" onclick="go(8)">NEXT ♡</button>
+</section>
+
+<!-- 8. ANNLITTA LETTER -->
+<section class="scene" id="s8">
+ <div class="small">Another little piece of her heart</div>
+ <h2>Annlitta's Letter for You</h2>
+ <div class="envelope" onclick="revealLetter('annLetter')">💌</div>
+ <p class="letter-instruction">Tap the envelope to open Annlitta's letter</p>
+ <article id="annLetter" class="letter-paper hidden">
 എന്റെ chechii..🫂
 
 പറയാൻ തുടങ്ങിയാൽ ഒരുപാടു ഉണ്ട്..🫣അതുകൊണ്ട് short ആക്കി പറയാം..😉 ഈശോയോട് ഞാൻ എന്നും നന്ദി പറയാറുണ്ട്🥹 എനിക്ക് ഇങ്ങനെ ഒരു ചേച്ചിയെ തന്നതിന്...😍 ഞാൻ എങ്ങനെയാ ഇത്രയും ചേച്ചിയോട് അടുത്തതെന്ന്🥰എനിക്ക് ഇപ്പോഴും പറയാൻ അറിയില്ല...😁 ചേച്ചിക്ക് അറിയാലോ ആരേലും ഇല്ലാതെ തന്നെ അവിടെ വന്നു ഞാൻ ഇരിക്കാറില്ലാരുന്നല്ലോ..🥱 എനിക്ക് ഇഷ്ടവും അല്ലാരുന്നു...😬ഒട്ടും താല്പര്യം ഇല്ലാതെയാണ് ആ വീട്ടിലോട്ട് ഞാൻ കേറി വന്നത്...🫡പക്ഷേ.. ഇപ്പോൾ അവിടുന്നു എറങ്ങാൻ പോലും പറ്റാത്ത അവസ്ഥയിൽ ഞാൻ എത്തിയെങ്കിൽ....😍അന്ന് ജാൻവി എന്നോട് പറഞ്ഞ ഒരു കാര്യം...❤️ഇനി നീ മാറും എന്ന്..☺️അത് അന്ന് ഞാൻ കാര്യമായിട്ട് എടുത്തില്ല..🙂ഇന്ന് ഞാൻ എടക്ക് ഓർക്കും..😇ഒട്ടും പ്രതിഷിക്കാതെ എനിക്ക് കിട്ടിയ ഒരു ഗിഫ്റ്റ് ആണ് ചേച്ചി..😘ശ്രദ്ധിച്ചിട്ടില്ലേ..🤭 എന്നെങ്കിലും ഞാൻ തന്നെ പോകുവാണെന്നു പറഞ്ഞു ഇറങ്ങിയിട്ടുണ്ടോ..😂ഓടിച്ചു വിടണം...🤣ഞാൻ ഓരോ കാര്യങ്ങൾ പഠിച്ചത് ചേച്ചിയിലൂടെയാണ്..❤️‍🔥 അറിയാലോ..എങ്ങനെ ആയിരുന്നു എന്ന്..😁 ഇപ്പോഴും എങ്ങനെ ആണെന്ന്...😁ഇതൊക്കെ അറിഞ്ഞിട്ടും ഇങ്ങനെ ചേർത്ത് പിടിക്കുന്നില്ലേ..😍ഈശോയുടെ സ്നേഹം നിറഞ്ഞിരിക്കുന്നത് കൊണ്ടല്ലേ...🔥ചേച്ചിടെ കാര്യം പറഞ്ഞ് ഞാൻ ഈശോയുടെ അടുത്ത് പോയി ഇരുന്നാൽ കരഞ്ഞുപോകും..🥺ഓഡിയോ ഇടുമ്പോൾ കേൾക്കുന്നതല്ലേ..🫣 ഇതിപ്പോ ടൈപ്പ് ചെയ്തു തരുന്നത് കൊണ്ട് അത് അറിയത്തില്ലലോ..😋😉ഇതൊന്നും അല്ല... പറയാൻ ഇനിയും ഉണ്ട്...💃🏻💃🏻 പക്ഷേ എല്ലാം കൂടെ ഇരുന്നു ചേച്ചി വായിക്കണ്ടേ...🙃 അതുകൊണ്ട് നിർത്തുവാ...😌പിന്നെ ഞാൻ ഇന്നലെ ബിനോജ് അച്ചന്റെ വീഡിയോ കണ്ടപ്പോൾ ചേച്ചിയോട് ഒരുപാടു കാര്യങ്ങൾ പറയാൻ ഉണ്ടന്ന് പറഞ്ഞില്ലേ..😊ഇപ്പോൾ ഒരു കാര്യം പറയാം...🤩ഇന്നലെ അച്ചൻ പറഞ്ഞപോലെ ദിയമോൾ അവളുടെ അമ്മയെ പങ്കുവെച്ചു കൊടുത്തിട്ടുണ്ട്...🥳ഒരുപാടു പേർക്ക്..🥹എനിക്ക് വീട്ടിൽ നിന്ന് കിട്ടാത്തത് പലതും ചേച്ചിലൂടെ കിട്ടിയിട്ടുണ്ട്..🤗പിന്നെ കുട്ടമ്മ..😘ഇതൊക്കെ detail ആയിട്ട് പറയണമെന്നുണ്ട്..☺️ബാക്കി പിന്നെ പറയാം..🫶എല്ലാം അവിടുന്നു എവിടുന്ന് ഒക്കെ എന്തൊക്കയോ പറഞ്ഞ് വെച്ചിട്ടുണ്ട്...😇അപ്പൊ ഒന്നുടെ പറയാ....😃
@@ -372,193 +431,92 @@ Happy Birthday Chechii......🥳
 ചേച്ചിയെ പോലെ വേറെ ഒരാളെ ഞാൻ കണ്ടിട്ടില്ല.. നല്ലയൊരു മകളാണ് കുട്ടമ്മക്ക്..❤️ നല്ലയൊരു ഭാര്യ ആണ് സജി ചേട്ടന്...❤️നല്ലയൊരു അമ്മയാണ് ദിയമോൾക്കു...👼🏻എല്ലാർക്കും..
 
 കുറെ നേരവായി നിർത്താം എന്ന് പറഞ്ഞിട്ട്...😬 ഓക്കേ...👍ചേച്ചി ഓർക്കുവാരിക്കും..😆 ഇവൾ എന്തൊക്കയാ ഈ പറഞ്ഞേക്കുന്നത് എന്ന്..😶‍🌫️അറിയാലോ ചേച്ചിക്കു എന്നെ...💃🏻
-  </article>
-  <button class="next" onclick="go(8)">NEXT ♡</button>
+ </article>
+ <div class="memory-sprinkle" id="memoryAnnlitta"></div>
+ <button class="next" onclick="go(9)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 8: ANNLITTA -->
-<section class="scene" id="s8">
-  <div class="small">Another little piece of her heart</div>
-  <h2>Annlitta's Letter for You</h2>
-  <div class="envelope" onclick="revealLetter('annLetter')">💌</div>
-  <p class="letter-instruction">Tap the envelope to open Annlitta's letter</p>
-  <article id="annLetter" class="letter-paper hidden">
-ചേച്ചിയെ... ഹാപ്പി birthday 🎉... കർത്താവ് ജീവിതത്തിൽ തന്ന അനുഗ്രഹങ്ങളിൽ ഒന്നാണ് ചേച്ചി☺️... തകർന്ന് വീഴാമായിരുന്ന പല അവസരങ്ങളിലും ചേർത്ത് പിടിച്ചു എല്ലാറ്റിലും ഉപരിയായി ഈശോയുടെ സ്നേഹം അനുഭവിപ്പിക്കാൻ ഒക്കെ  എടുത്ത ത്യാഗത്തിന് ഒരുപാട് നന്ദി...
-
-ഫോർമൽ ആയി പോകരുതെന്ന് ഒക്കെ ഓർത്തെങ്കിലും എഴുതി വന്നപ്പോ അങ്ങനെ ആയോ എന്നൊരു സംശയം 😅ചേച്ചിയോട് ഇതിനു മുന്നേ ഞാൻ പറഞ്ഞിട്ടുണ്ടോ എന്ന് എനിക്ക് അറിയില്ല... ബട്ട്‌ you are my elder sister👭... ശകാരിക്കാനും തിരുത്താനും എല്ലാറ്റിലും ഉപരി എല്ലാം പങ്ക് വെക്കാനുമായിട്ട് ഈശോ തന്ന സമ്മാനം🤩ഒത്തിരി വേദനിപ്പിച്ചിട്ടുണ്ടെന്ന് അറിയാം... സോറി🫣and thankyou for loving me always😍
-
-B'day wishes from ur gamu, taru and ur kunjaava🥰🥰🥰God blesss youuuu... Ummaaa😘😘😘😘I think u will be the first one who wrote ummaa to me😅
-  </article>
-  <button class="next" onclick="go(9)">NEXT ♡</button>
-</section>
-
-<!-- SCENE 9: MORE SURPRISES -->
+<!-- 9. SECRET MESSAGE -->
 <section class="scene" id="s9">
-  <div class="small">A little secret just for you</div>
-  <h2>One More Thing, Ammeeee...</h2>
-  <p class="subtitle">There is a secret message hidden in this heart.</p>
-  <button class="bible-button" onclick="reveal('Ammeee, you are not just loved for everything you do. You are loved simply because you are YOU. I hope you always remember that. ❤️')">💗</button>
-  <div class="secret-message" id="secretMessage"></div>
-  <p>Tap the heart to discover it.</p>
-  <button class="next" onclick="go(10)">NEXT ♡</button>
+ <div class="small">A little secret just for you</div>
+ <h2>One More Thing, Ammeeee...</h2>
+ <p class="subtitle">There is a secret message hidden in this heart.</p>
+ <button class="bible-button" onclick="reveal('Ammeee, you are not just loved for everything you do. You are loved simply because you are YOU. I hope you always remember that. ❤️')">💗</button>
+ <div class="secret-message" id="secretMessage"></div>
+ <p>Tap the heart to discover it.</p>
+ <button class="next" onclick="go(10)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 10: SCRAPBOOK -->
+<!-- 10. FULL SCRAPBOOK -->
 <section class="scene" id="s10">
-  <div class="small">A universe of our memories</div>
-  <h2>Little Moments, Forever Memories</h2>
-  <p>Every picture holds a little piece of our story. ♡</p>
-  <div class="scrapbook" id="scrapbook"></div>
-  <button class="next" onclick="go(11)">NEXT ♡</button>
+ <div class="small">A universe of our memories</div>
+ <h2>Little Moments, Forever Memories</h2>
+ <p>Every picture holds a little piece of our story. ♡</p>
+ <p class="subtitle">A hundred little memories, all in one place. 🌷</p>
+ <div class="scrapbook" id="scrapbook"></div>
+ <button class="next" onclick="go(11)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 11: VIDEO -->
+<!-- 11. VIDEO -->
 <section class="scene" id="s11">
-  <div class="small">A little movie of love</div>
-  <h2>Because You Deserve to Be Celebrated</h2>
-  <p class="subtitle">A few moments, a thousand feelings, and one very special Ammeeee. ❤️</p>
-  <video controls playsinline preload="metadata">
-    <source src="HnVideoEditor_2026_11_09_152933892.mp4" type="video/mp4">
-    Your browser does not support video.
-  </video>
-  <button class="next" onclick="go(12)">NEXT ♡</button>
+ <div class="small">A little movie of love</div>
+ <h2>Because You Deserve to Be Celebrated</h2>
+ <p class="subtitle">A few moments, a thousand feelings, and one very special Ammeeee. ❤️</p>
+ <video controls playsinline preload="metadata">
+  <source src="HnVideoEditor_2026_11_09_152933892.mp4" type="video/mp4">
+  Your browser does not support video.
+ </video>
+ <p class="subtitle">A little collection of moments we'll always treasure. 💗</p>
+ <div class="memory-sprinkle" id="memoryVideo"></div>
+ <button class="next" onclick="go(12)">NEXT ♡</button>
 </section>
 
-<!-- SCENE 12: YEHAZEL -->
+<!-- 12. YEHAZEL -->
 <section class="scene" id="s12">
-  <div class="small gold">A dream, a purpose, a little surprise</div>
-  <div class="ornament">✨ 🌷 ✨ 🦋 ✨</div>
-  <h1 class="script">Something for your heart</h1>
-  <div class="yehzel">
-    <h2>YEHAZEL</h2>
-    <h3>A Little Platform for a Beautiful Purpose</h3>
-    <p>Ammeee... you've always wanted to spread the Word of God, share His love, and let His light reach more hearts. ❤️</p>
-    <p>So here's something for that dream you've carried in your heart — a little platform of your own, where you can share His Word, inspire souls, and sow seeds of faith.</p>
-    <p>May every word you share bring someone closer to Him. ✨</p>
-    <a class="next" style="display:inline-block;text-decoration:none" href="https://www.instagram.com/yehz.el?vrfl=MXVpcm45bjU3aWJteg==" target="_blank" rel="noopener noreferrer">DISCOVER YOUR NEW PLATFORM ♡</a>
-    <p class="gold">Your dream. Your mission. Your YEHAZEL.</p>
-  </div>
-  <button class="next" onclick="go(13)">ONE LAST THING ♡</button>
+ <div class="small gold">A dream, a purpose, a little surprise</div>
+ <div class="ornament">✨ 🌷 ✨ 🦋 ✨</div>
+ <h1 class="script">Something for your heart</h1>
+ <div class="yehzel">
+  <h2>YEHAZEL</h2>
+  <h3>A Little Platform for a Beautiful Purpose</h3>
+  <p>Ammeee... you've always wanted to spread the Word of God, share His love, and let His light reach more hearts. ❤️</p>
+  <p>So here's something for that dream you've carried in your heart — a little platform of your own, where you can share His Word, inspire souls, and sow seeds of faith.</p>
+  <p>May every word you share bring someone closer to Him. ✨</p>
+  <a class="next" style="display:inline-block;text-decoration:none" href="https://www.instagram.com/yehz.el?vrfl=MXVpcm45bjU3aWJteg==" target="_blank" rel="noopener noreferrer">DISCOVER YOUR NEW PLATFORM ♡</a>
+  <p class="gold">Your dream. Your mission. Your YEHAZEL.</p>
+ </div>
+ <button class="next" onclick="go(13)">ONE LAST THING ♡</button>
 </section>
 
-<!-- SCENE 13: END -->
+<!-- 13. END -->
 <section class="scene" id="s13">
-  <div class="birthday-cake">💐</div>
-  <h1 class="script">I Love You,</h1>
-  <h1>AMMEEEE! ❤️</h1>
-  <p class="subtitle">I'll always choose you as my mother in every lifetime I get.</p>
-  <div class="ornament">♡ 🦋 ♡ 🌷 ♡ 🦋 ♡</div>
-  <div class="card">
-    <p>Ammee, thank you for being my home, my strength, my example and one of God's most beautiful gifts to me.</p>
-    <p>May Eesho fill every year ahead with peace, joy, health, love and countless blessings.</p>
-    <h2 class="script">Nanni Eeshoyee... ❤️</h2>
-    <p>For my mother.</p>
-    <p>From your Diyamol, Appa, Kuttamma &amp; Kozhamachy</p>
-    <p>Gamu, Annlitta and the entire adhoc family.</p>
-  </div>
-  <button class="next" onclick="celebrate()">CELEBRATE AGAIN! 🎉</button>
+ <div class="birthday-cake">💐</div>
+ <h1 class="script">I Love You,</h1>
+ <h1>AMMEEEE! ❤️</h1>
+ <p class="subtitle">I'll always choose you as my mother in every lifetime I get.</p>
+ <div class="ornament">♡ 🦋 ♡ 🌷 ♡ 🦋 ♡</div>
+ <div class="card">
+  <p>Ammee, thank you for being my home, my strength, my example and one of God's most beautiful gifts to me.</p>
+  <p>May Eesho fill every year ahead with peace, joy, health, love and countless blessings.</p>
+  <h2 class="script">Nanni Eeshoyee... ❤️</h2>
+  <p>For my mother.</p>
+  <p>From your Diyamol, Appa, Kuttamma &amp; Kozhamachy</p>
+  <p>Gamu, Annlitta and the entire adhoc family.</p>
+ </div>
+ <button class="next" onclick="celebrate()">CELEBRATE AGAIN! 🎉</button>
 </section>
 
 <footer>Made with endless love, for Ammeeee ♡</footer>
 </div>
 
 <div class="photo-modal" id="photoModal" onclick="closePhoto(event)">
-  <button onclick="closePhoto(event)" aria-label="Close">×</button>
-  <img id="largePhoto" alt="Family memory">
+ <button onclick="closePhoto(event)" aria-label="Close">×</button>
+ <img id="largePhoto" alt="Family memory">
 </div>
 
 <script>
-/* SCENE NAVIGATION */
-let currentScene=1;
-function go(number){
-  document.querySelectorAll(".scene").forEach(s=>s.classList.remove("active"));
-  const target=document.getElementById("s"+number);
-  if(!target)return;
-  target.classList.add("active");
-  currentScene=number;
-  window.scrollTo({top:0,behavior:"smooth"});
-  sparkleBurst();
-  if(number===10) buildScrapbook();
-}
-
-/* MUSIC */
-const music=document.getElementById("music");
-let musicStarted=false;
-async function startMusic(){
-  try{
-    await music.play();
-    musicStarted=true;
-    document.getElementById("musicControl").textContent="♫";
-  }catch(e){
-    console.log("Music will start after another tap.");
-  }
-}
-document.getElementById("musicControl").addEventListener("click",async()=>{
-  if(music.paused){
-    try{await music.play();musicStarted=true;}catch(e){}
-  }else music.pause();
-});
-document.getElementById("enterBtn").addEventListener("click",()=>{
-  startMusic();
-  go(2);
-});
-
-/* BIBLE REVEAL */
-function openBible(){
-  const verse=document.getElementById("bibleVerse");
-  verse.classList.remove("hidden");
-  sparkleBurst(35);
-}
-
-/* LOVE CALCULATOR */
-let calculating=false;
-function calculateLove(){
-  if(calculating)return;
-  calculating=true;
-  const fill=document.getElementById("loveFill");
-  const result=document.getElementById("loveResult");
-  let n=0;
-  result.textContent="Calculating... 💗";
-  fill.style.width="0%";
-  const timer=setInterval(()=>{
-    n+=2;
-    fill.style.width=n+"%";
-    if(n>=100){
-      clearInterval(timer);
-      result.innerHTML="ERROR: TOO MUCH TO CALCULATE! ❤️<br>Love exceeds all known limits!";
-      sparkleBurst(30);
-      calculating=false;
-    }
-  },45);
-}
-
-/* SCROLL LETTER */
-function openScroll(){
-  document.getElementById("scroll").classList.toggle("open");
-  sparkleBurst(20);
-}
-
-/* LETTER ENVELOPES */
-function revealLetter(id){
-  const letter=document.getElementById(id);
-  letter.classList.toggle("hidden");
-  if(!letter.classList.contains("hidden")){
-    letter.scrollIntoView({behavior:"smooth",block:"center"});
-    sparkleBurst(20);
-  }
-}
-
-/* SURPRISE MESSAGES */
-function reveal(message){
-  const box=document.getElementById("tinyMessage");
-  const secret=document.getElementById("secretMessage");
-  if(box){box.textContent=message;box.style.display="block";}
-  if(secret){secret.textContent=message;secret.style.display="block";}
-  sparkleBurst(15);
-}
-
-/* SCRAPBOOK PHOTO COLLECTION */
-const photos=[
+/* PHOTO FILES — all expected in the same folder as index.html */
+const photos = [
 "IMG-20250608-WA0060.jpg","IMG-20250608-WA0061.jpg",
 "IMG-20250703-WA0051.jpg","IMG-20251008-WA0154.jpg",
 "IMG-20251008-WA0159.jpg","IMG-20260122-WA0068.jpg",
@@ -641,80 +599,282 @@ const photos=[
 "IMG_20261107_220432_920.webp","WA_1777631648264.jpeg"
 ];
 
+/* ADD LITTLE DOODLES TO EACH SCENE */
+function addDoodles(){
+ const stickers=["♡","✿","✧","🎀","🦋","🌷","☆","❀","💌","୨୧"];
+ document.querySelectorAll(".scene").forEach(scene=>{
+  for(let i=1;i<=5;i++){
+   const d=document.createElement("span");
+   d.className="doodle d"+i;
+   d.textContent=stickers[Math.floor(Math.random()*stickers.length)];
+   scene.appendChild(d);
+  }
+ });
+}
+addDoodles();
+
+/* NAVIGATION */
+let currentScene=1;
+function go(number){
+ document.querySelectorAll(".scene").forEach(s=>s.classList.remove("active"));
+ const target=document.getElementById("s"+number);
+ if(!target)return;
+ target.classList.add("active");
+ currentScene=number;
+ window.scrollTo({top:0,behavior:"smooth"});
+ sparkleBurst();
+ loadMemorySprinkles(number);
+ if(number===10)buildScrapbook();
+}
+
+/* MUSIC — begins after first user interaction */
+const music=document.getElementById("music");
+const musicControl=document.getElementById("musicControl");
+
+async function startMusic(){
+ try{
+  await music.play();
+  musicControl.textContent="♫";
+  musicControl.title="Pause music";
+ }catch(error){
+  musicControl.textContent="♪";
+  musicControl.title="Tap to play music";
+ }
+}
+musicControl.addEventListener("click",async()=>{
+ if(music.paused){
+  await startMusic();
+ }else{
+  music.pause();
+  musicControl.textContent="♪";
+  musicControl.title="Play music";
+ }
+});
+
+/* BIBLE REVEAL */
+function openBible(){
+ document.getElementById("bibleVerse").classList.remove("hidden");
+ sparkleBurst(35);
+}
+
+/* LOVE CALCULATOR */
+let calculating=false;
+let loveTimer=null;
+
+function calculateLove(){
+ if(calculating)return;
+ calculating=true;
+
+ const fill=document.getElementById("loveFill");
+ const result=document.getElementById("loveResult");
+ const button=document.getElementById("calculateButton");
+
+ clearInterval(loveTimer);
+ let n=0;
+ fill.style.width="0%";
+ result.textContent="Initializing motherly-love measurement... 💗";
+ button.disabled=true;
+ button.textContent="CALCULATING... 💞";
+
+ loveTimer=setInterval(()=>{
+  n+=1;
+  fill.style.width=n+"%";
+
+  if(n===20)result.textContent="Measuring hugs and prayers... 🫂";
+  if(n===45)result.textContent="Checking unlimited sacrifices... 🌷";
+  if(n===70)result.textContent="Searching for a limit... 👀";
+  if(n===90)result.textContent="The machine is getting emotional... 😭";
+
+  if(n>=100){
+   clearInterval(loveTimer);
+   result.innerHTML=
+    "ERROR: TOO MUCH TO CALCULATE! ❤️<br>"+
+    "Love exceeds all known limits!<br>"+
+    "<span style='font-size:14px'>Scientific conclusion: Ammeee's love is infinite. ♾️</span>";
+   button.disabled=false;
+   button.textContent="CALCULATE AGAIN ♡";
+   calculating=false;
+   sparkleBurst(45);
+  }
+ },45);
+}
+
+/* SCROLL LETTER */
+function openScroll(){
+ const scroll=document.getElementById("scroll");
+ scroll.classList.toggle("open");
+ sparkleBurst(20);
+}
+
+/* LETTER ENVELOPES */
+function revealLetter(id){
+ const letter=document.getElementById(id);
+ if(!letter)return;
+ letter.classList.toggle("hidden");
+ if(!letter.classList.contains("hidden")){
+  letter.scrollIntoView({behavior:"smooth",block:"center"});
+  sparkleBurst(25);
+ }
+}
+
+/* SURPRISE MESSAGES */
+function reveal(message){
+ const tiny=document.getElementById("tinyMessage");
+ const secret=document.getElementById("secretMessage");
+ if(tiny){
+  tiny.textContent=message;
+  tiny.style.display="block";
+ }
+ if(secret){
+  secret.textContent=message;
+  secret.style.display="block";
+ }
+ sparkleBurst(20);
+}
+
+/* PHOTO COMPONENT */
+function makePhoto(file,index){
+ const figure=document.createElement("figure");
+ figure.className="polaroid";
+
+ const img=document.createElement("img");
+ img.src=file;
+ img.alt="A beautiful family memory";
+ img.loading=index<15?"eager":"lazy";
+
+ img.onerror=()=>{
+  img.remove();
+  const missing=document.createElement("div");
+  missing.className="photo-missing";
+  missing.innerHTML="♡<br>Memory belongs here";
+  figure.prepend(missing);
+ };
+
+ const captions=[
+  "A memory to keep ♡",
+  "Forever my favourite",
+  "Little moments, big love",
+  "Our beautiful story",
+  "Always together ♡",
+  "A little piece of happiness ✨",
+  "Love lives here 🌷",
+  "One for the memory book 💗"
+ ];
+ const caption=document.createElement("figcaption");
+ caption.textContent=captions[index%captions.length];
+
+ figure.append(img,caption);
+ figure.addEventListener("click",()=>openPhoto(file));
+ return figure;
+}
+
+/* FULL PHOTO GALLERY */
 let scrapbookBuilt=false;
 function buildScrapbook(){
-  if(scrapbookBuilt)return;
-  scrapbookBuilt=true;
-  const box=document.getElementById("scrapbook");
-  photos.forEach((file,i)=>{
-    const figure=document.createElement("figure");
-    figure.className="polaroid";
-    const img=document.createElement("img");
-    img.src=file;
-    img.loading="lazy";
-    img.alt="A family memory";
-    img.onerror=()=>figure.remove();
-    const caption=document.createElement("figcaption");
-    caption.textContent=["A memory to keep ♡","Forever my favourite","Little moments, big love","Our beautiful story","Always together ♡"][i%5];
-    figure.append(img,caption);
-    figure.addEventListener("click",()=>openPhoto(file));
-    box.appendChild(figure);
-  });
+ const box=document.getElementById("scrapbook");
+ if(!box||scrapbookBuilt)return;
+ scrapbookBuilt=true;
+ photos.forEach((file,index)=>{
+  box.appendChild(makePhoto(file,index));
+ });
 }
+
+/* PHOTOS THROUGHOUT THE PAGE */
+function sprinklePhotos(containerId,start,count){
+ const box=document.getElementById(containerId);
+ if(!box||box.dataset.loaded==="yes")return;
+ box.dataset.loaded="yes";
+ photos.slice(start,start+count).forEach((file,index)=>{
+  box.appendChild(makePhoto(file,start+index));
+ });
+}
+function loadMemorySprinkles(number){
+ if(number===3)sprinklePhotos("memoryReflection",3,3);
+ if(number===5)sprinklePhotos("memoryLetter",9,3);
+ if(number===7)sprinklePhotos("memoryGamu",15,3);
+ if(number===8)sprinklePhotos("memoryAnnlitta",18,3);
+ if(number===11)sprinklePhotos("memoryVideo",21,3);
+}
+
+/* OPENING PHOTO VIEWER */
+document.querySelectorAll("#openingPhotos img").forEach(img=>{
+ img.addEventListener("click",()=>openPhoto(img.src));
+});
 
 /* PHOTO VIEWER */
 function openPhoto(src){
-  document.getElementById("largePhoto").src=src;
-  document.getElementById("photoModal").classList.add("open");
+ const modal=document.getElementById("photoModal");
+ const image=document.getElementById("largePhoto");
+ image.src=src;
+ modal.classList.add("open");
 }
-function closePhoto(e){
-  if(e.target.tagName==="IMG")return;
+function closePhoto(event){
+ if(event.target&&event.target.tagName==="IMG")return;
+ document.getElementById("photoModal").classList.remove("open");
+}
+document.addEventListener("keydown",event=>{
+ if(event.key==="Escape"){
   document.getElementById("photoModal").classList.remove("open");
-}
+ }
+});
 
-/* SPARKLES */
+/* SPARKLE BURST */
 function sparkleBurst(amount=18){
-  const layer=document.getElementById("sparkles");
-  const symbols=["✧","✨","♡","✦","⋆","💗"];
-  for(let i=0;i<amount;i++){
-    const el=document.createElement("span");
-    el.className="sparkle";
-    el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
-    el.style.left=Math.random()*100+"%";
-    el.style.top=(20+Math.random()*70)+"%";
-    el.style.fontSize=(12+Math.random()*22)+"px";
-    layer.appendChild(el);
-    setTimeout(()=>el.remove(),1700);
-  }
+ const layer=document.getElementById("sparkles");
+ const symbols=["✧","✨","♡","✦","⋆","💗","🌷"];
+ for(let i=0;i<amount;i++){
+  const el=document.createElement("span");
+  el.className="sparkle";
+  el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  el.style.left=Math.random()*100+"%";
+  el.style.top=(20+Math.random()*70)+"%";
+  el.style.fontSize=(12+Math.random()*22)+"px";
+  layer.appendChild(el);
+  setTimeout(()=>el.remove(),1700);
+ }
 }
 
 /* GOLDEN DUST TRAIL */
 let lastDust=0;
-window.addEventListener("pointermove",e=>{
-  const now=Date.now();
-  if(now-lastDust<65)return;
-  lastDust=now;
-  const dot=document.createElement("i");
-  dot.className="dust-particle";
-  dot.style.left=e.clientX+"px";
-  dot.style.top=e.clientY+"px";
-  document.getElementById("dust").appendChild(dot);
-  setTimeout(()=>dot.remove(),1500);
+window.addEventListener("pointermove",event=>{
+ const now=Date.now();
+ if(now-lastDust<65)return;
+ lastDust=now;
+ const dot=document.createElement("i");
+ dot.className="dust-particle";
+ dot.style.left=event.clientX+"px";
+ dot.style.top=event.clientY+"px";
+ document.getElementById("dust").appendChild(dot);
+ setTimeout(()=>dot.remove(),1500);
 },{passive:true});
 
+/* SCROLL PROGRESS + GOLDEN SCROLL DUST */
+let lastScrollDust=0;
 window.addEventListener("scroll",()=>{
-  const total=document.documentElement.scrollHeight-window.innerHeight;
-  const percent=total>0?(window.scrollY/total)*100:0;
-  document.getElementById("progress").style.width=percent+"%";
+ const total=document.documentElement.scrollHeight-window.innerHeight;
+ const percent=total>0?(window.scrollY/total)*100:0;
+ document.getElementById("progress").style.width=percent+"%";
+
+ const now=Date.now();
+ if(now-lastScrollDust>100){
+  lastScrollDust=now;
+  const dot=document.createElement("i");
+  dot.className="dust-particle";
+  dot.style.left=(Math.random()*window.innerWidth)+"px";
+  dot.style.top=(window.innerHeight-25)+"px";
+  document.getElementById("dust").appendChild(dot);
+  setTimeout(()=>dot.remove(),1500);
+ }
 },{passive:true});
 
 /* CELEBRATION */
 function celebrate(){
-  sparkleBurst(90);
-  for(let i=0;i<5;i++)setTimeout(()=>sparkleBurst(45),i*250);
-  window.scrollTo({top:0,behavior:"smooth"});
+ sparkleBurst(90);
+ for(let i=0;i<5;i++){
+  setTimeout(()=>sparkleBurst(45),i*250);
+ }
+ window.scrollTo({top:0,behavior:"smooth"});
 }
 </script>
 </body>
 </html>
-
