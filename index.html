@@ -411,7 +411,6 @@ Othiri nanni ond ammee... For everything... Ellm pryn thodngiyal ammakk ariyalo 
 
 B'day wishes from ur gamu, taru and ur kunjaava🥰🥰🥰God blesss youuuu... Ummaaa😘😘😘😘I think u will be the first one who wrote ummaa to me😅
  </article>
- <div class="memory-sprinkle" id="memoryGamu"></div>
  <button class="next" onclick="go(8)">NEXT ♡</button>
 </section>
 
@@ -432,7 +431,6 @@ Happy Birthday Chechii......🥳
 
 കുറെ നേരവായി നിർത്താം എന്ന് പറഞ്ഞിട്ട്...😬 ഓക്കേ...👍ചേച്ചി ഓർക്കുവാരിക്കും..😆 ഇവൾ എന്തൊക്കയാ ഈ പറഞ്ഞേക്കുന്നത് എന്ന്..😶‍🌫️അറിയാലോ ചേച്ചിക്കു എന്നെ...💃🏻
  </article>
- <div class="memory-sprinkle" id="memoryAnnlitta"></div>
  <button class="next" onclick="go(9)">NEXT ♡</button>
 </section>
 
@@ -627,7 +625,7 @@ function go(number){
  if(number===10)buildScrapbook();
 }
 
-/* MUSIC — begins after first user interaction */
+/* MUSIC */
 const music=document.getElementById("music");
 const musicControl=document.getElementById("musicControl");
 
@@ -742,7 +740,9 @@ function makePhoto(file,index){
  img.alt="A beautiful family memory";
  img.loading=index<15?"eager":"lazy";
 
+ let imageFailed=false;
  img.onerror=()=>{
+  imageFailed=true;
   img.remove();
   const missing=document.createElement("div");
   missing.className="photo-missing";
@@ -764,7 +764,9 @@ function makePhoto(file,index){
  caption.textContent=captions[index%captions.length];
 
  figure.append(img,caption);
- figure.addEventListener("click",()=>openPhoto(file));
+ figure.addEventListener("click",()=>{
+  if(!imageFailed)openPhoto(file);
+ });
  return figure;
 }
 
@@ -779,7 +781,9 @@ function buildScrapbook(){
  });
 }
 
-/* PHOTOS THROUGHOUT THE PAGE */
+/* PHOTOS THROUGHOUT THE PAGE
+   NOTE: No photo strips are loaded in Gamu or Annlitta's letter sections.
+*/
 function sprinklePhotos(containerId,start,count){
  const box=document.getElementById(containerId);
  if(!box||box.dataset.loaded==="yes")return;
@@ -788,11 +792,10 @@ function sprinklePhotos(containerId,start,count){
   box.appendChild(makePhoto(file,start+index));
  });
 }
+
 function loadMemorySprinkles(number){
  if(number===3)sprinklePhotos("memoryReflection",3,3);
  if(number===5)sprinklePhotos("memoryLetter",9,3);
- if(number===7)sprinklePhotos("memoryGamu",15,3);
- if(number===8)sprinklePhotos("memoryAnnlitta",18,3);
  if(number===11)sprinklePhotos("memoryVideo",21,3);
 }
 
